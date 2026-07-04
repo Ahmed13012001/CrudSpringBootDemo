@@ -17,6 +17,8 @@ public class Student {
 
     private String name;
 
+    private boolean deleted;
+
     public long getId() {
         return id;
     }
@@ -63,5 +65,13 @@ public class Student {
 
     public void setSubject(String subject) {
         this.subject = subject;
+    }
+
+    public boolean isDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.deleted = deleted;
     }
 }

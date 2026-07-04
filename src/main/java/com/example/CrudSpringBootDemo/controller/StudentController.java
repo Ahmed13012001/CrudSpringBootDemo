@@ -68,6 +68,12 @@ public class StudentController {
 
         return ResponseEntity.ok().body("Record Deleted");
     }
+    @PatchMapping("/softdelete/{id}")
+    public boolean softDelete(@PathVariable long id)
+    {
+        studentService.softDelete(id);
+        return false;
+    }
 
 
 }
